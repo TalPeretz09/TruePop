@@ -1,85 +1,115 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TruePop — Future Classic Popcorn</title>
-  <meta name="description" content="TruePop — pre-flavoured popcorn kernels. No microwave required — just pour, pop & enjoy." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="True POP" />
+  <meta name="description" content="TruePop - pre-flavoured popcorn kernels. No microwave required - just pour, pop & enjoy.">
+  <link rel="icon" href="Images/Favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="Homepage/homepage.css"/>
+  <script src="Homepage/homepage.js" defer></script>
+  <script src="main.js" defer></script>
+  <title>TruePop - Home</title>
 </head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <div class="mark">TP</div>
-        <div class="text">
-          <div class="logo-title">TruePop</div>
-          <div class="logo-subtitle">Future Classic Popcorn</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#how">How it works</a>
-        <a href="#partners">Partners</a>
-        <a class="cta" href="#shop">Shop</a>
-      </nav>
-    </header>
 
-    <!-- Main content -->
-    <main>
+<body>
+  <header>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu">&#9776;</button>
+
+    <a href="index.html"><img src="Images/NavLogo.png" alt="Website Main Logo" class="logo"></a>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#ourproducts">Our Products</a></li>
+        <li><a href="Testimonials/index.html">Testimonials</a></li>
+        <li><a href="Contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sidebar" id="mobile-sidebar">
+      <ul>
+        <hr></hr>
+        <li><a href="index.html">Home</a></li>
+        <hr></hr>
+        <li><a href="index.html#ourproducts">Our Products</a></li>
+        <hr></hr>
+        <li><a href="Testimonials/index.html">Testimonials</a></li>
+        <hr></hr>
+        <li><a href="Contact/index.html">Contact</a></li>
+        <hr></hr>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
       <section class="hero">
         <div>
           <h1>Pour. Pop. Enjoy — No microwave required.</h1>
-          <p class="muted">TruePop brings pre-flavoured popcorn kernels with healthy oils and bold flavours — locally inspired and ready on the stove. Affordable premium, made for every South African kitchen.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#products">Shop Singles & Packs</a>
+          <p>TruePop brings pre-flavoured popcorn kernels with healthy oils and bold flavours - locally inspired and ready on the stove. Affordable premium, made for every South African kitchen.</p>
+          
+          <div class="nav-buttons">
+            <a class="btn" href="#products">Shop Singles & Packs</a>
             <a class="btn" href="#how">How it works</a>
           </div>
+
           <div class="grid-3">
-            <div class="card"><strong>Healthy</strong><div class="muted">No microwave chemicals. Stove-popped goodness.</div></div>
-            <div class="card"><strong>Convenient</strong><div class="muted">Pre-measured oil & seasoning in every pack.</div></div>
-            <div class="card"><strong>Locally Inspired</strong><div class="muted">Classic salted, butter, and seasonal limited editions.</div></div>
+            <div class="card">
+              <strong>Healthy</strong><div>No microwave chemicals. Stove-popped goodness.</div>
+              <img src="Images/health.png" alt="Plus Health Icon">
+            </div>
+            <div class="card">
+              <strong>Convenient</strong><div>Pre-measured oil & seasoning in every pack.</div>
+              <img src="Images/measuring-cup.png" alt="Measuring Cup Icon">
+            </div>
+            <div class="card">
+              <strong>Locally Inspired</strong><div>Classic salted, butter, and seasonal limited editions.</div>
+              <img src="Images/sa-flag.png" alt="South African Flag">
+            </div>
           </div>
         </div>
+
         <aside class="card-visual">
-          <div class="pop-bowl"><!-- SVG popcorn bowl here --></div>
+          <div class="pop-bowl"><img src="Images/PopcornBowl.png" alt="Popcorn Bowl"></div>
         </aside>
+
       </section>
 
       <section id="about" class="about-section">
         <div class="about-content">
           <div class="about-text">
             <h3>About TruePop</h3>
-            <p class="muted">From the founders behind POPZ (launched 2008), TruePop is the next-generation popcorn...</p>
+            <p>From the founders behind POPZ (launched 2008), TruePop is the next-generation popcorn.</p>
           </div>
           <div class="about-card">
-            <div class="card"><strong>Market Opportunity</strong><div class="muted">South Africa's popcorn market remains underdeveloped...</div></div>
+            <div class="card"><div>South Africa's popcorn market remains underdeveloped...</div></div>
           </div>
         </div>
       </section>
 
       <section id="products">
         <h3>Products</h3>
-        <p class="muted">Pre-flavoured raw kernels, available as single packs and value 3-packs...</p>
+        <p>Pre-flavoured raw kernels, available as single packs and value 3-packs</p>
         <div class="products">
-          <!-- Product cards here -->
+          <div class="card"><strong>SALT</strong><img src="Images/salt.png"></div>
+          <div class="card"><strong>BUTTER</strong><img src="Images/butter.png"></div>
+          <div class="card"><strong>EXTRA BUTTER</strong><img src="Images/extra-butter.png"></div>
         </div>
       </section>
 
       <section id="how">
         <h3>How it works</h3>
         <div class="steps">
-          <div class="step"><strong>1 — Open</strong><div class="muted">Tear open...</div></div>
-          <div class="step"><strong>2 — Pop</strong><div class="muted">Heat on medium...</div></div>
-          <div class="step"><strong>3 — Enjoy</strong><div class="muted">Tip into a bowl...</div></div>
+          <div class="step"><strong>1 — Open</strong><div>Tear open...</div></div>
+          <div class="step"><strong>2 — Pop</strong><div>Heat on medium...</div></div>
+          <div class="step"><strong>3 — Enjoy</strong><div>Tip into a bowl...</div></div>
         </div>
       </section>
 
       <section id="partners">
-        <h3>Partners & Promotions</h3>
+        <h3>Partners</h3>
         <div class="partners">
           <div class="partner">Filmfinity</div>
           <div class="partner">Gamefinity</div>
@@ -87,10 +117,31 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <p>© 2025 TruePop. All rights reserved.</p>
+      <div class="footer-main">
+        <div class="footer-contact">
+          <div class="contact-item">
+            <img src="Images/location-pin.png" alt="Location Icon">
+          </div>
+          <div class="contact-item">
+            <img src="Images/phone-call.png" alt="Phone Icon">
+            <a href="" target="_blank" rel="noopener"></a>
+          </div>
+          <div class="contact-item">
+            <img src="Images/email.png" alt="Email Icon">
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+      </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 TruePop. All rights reserved.</p>
+    </div>
     </footer>
-  </div>
 </body>
 </html>
