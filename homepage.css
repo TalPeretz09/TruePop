@@ -5,6 +5,10 @@
   padding: 2rem;
 }
 
+h3 {
+padding-left: 1rem;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;

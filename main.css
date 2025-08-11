@@ -74,7 +74,7 @@ header {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
 }
 
 .navbar ul,
@@ -126,22 +126,89 @@ header {
   box-shadow: 0 4px 12px rgba(249, 168, 28, 0.4);
 }
 
-/* Footer */
 footer {
-  background-color: var(--color-bg-card);
-  padding: 2rem;
-  text-align: center;
-  color: var(--color-text-muted);
+  background-color: #253252;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+footer a,
+footer address,
+footer p {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-main img,
+.footer-social img,
+.contact-item img {
+  filter: brightness(0) invert(1);
+}
+
+/* Main layout for contact and socials */
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Contact Section Layout */
+.footer-contact {
+  display: flex;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+.contact-item img {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.contact-item address {
+  margin: 0;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/* Social icons layout */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer-social img {
-  width: 28px;
-  margin: 0 0.5rem;
-  transition: opacity var(--transition-speed);
+  width: 40px;
+  height: 40px;
 }
 
-.footer-social img:hover {
-  opacity: 0.7;
+.footer-contact {
+  flex: 1 1 70%;
+}
+.footer-social {
+  flex: 1 1 30%;
+  justify-content: flex-end; /* Optional: align to the right */
+  margin-top: -50px;
+}
+
+/* Footer bottom line */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
 }
 
 /* Responsive Navigation */
