@@ -77,8 +77,7 @@ header {
   height: 60px;
 }
 
-.navbar ul,
-.sidebar ul {
+.navbar ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
@@ -96,8 +95,6 @@ header {
 
 .sidebar {
   display: none;
-  flex-direction: column;
-  background-color: var(--color-bg-card);
 }
 
 .hamburger {
@@ -242,17 +239,62 @@ footer p {
   }
 
   .hamburger {
-    display: block;
-  }
+  display: block;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  z-index: 1100;
+}
 
-  .sidebar {
-    display: flex;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    padding: 1rem;
-  }
+/* Sidebar container */
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -260px; /* hide offscreen by default */
+  height: 100%;
+  width: 260px;
+  background-color: var(--color-bg-card);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.6);
+  padding-top: 80px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+/* Sidebar visible */
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar list */
+.sidebar ul {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color var(--transition-speed);
+}
+
+/* Hover accent effect */
+.sidebar a:hover {
+  color: var(--color-butter);
+}
+
+/* Optional: active state cycling through flavours */
+.sidebar a:active {
+  color: var(--color-extra-butter);
+}
 
   footer {
     background-color: #253252;
