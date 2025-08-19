@@ -1,0 +1,92 @@
+.testimonials-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.testimonials-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.testimonial-card {
+  background-color: var(--color-bg-card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.08);
+}
+
+.stars {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-butter);
+}
+
+.message {
+  margin-bottom: 0.8rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--color-salt);
+}
+
+/* Form styling */
+.testimonials-page h2 {
+  margin: 2.5rem 0 1.5rem;
+}
+
+.testimonial-form {
+  background-color: var(--color-bg-card);
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #1f293b;
+  color: var(--color-text-light);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid var(--color-extra-butter);
+}
+
+.testimonial-form .btn {
+  align-self: flex-start;
+  cursor: pointer;
+}

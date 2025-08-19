@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="True POP" />
+  <meta name="description" content="TruePop - pre-flavoured popcorn kernels. No microwave required - just pour, pop & enjoy.">
+  <link rel="icon" href="../Images/Favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../Global/main.css" />
+  <link rel="stylesheet" href="testimonials.css"/>
+  <script src="../Global/main.js" defer></script>
+  <title>TruePop - Testimonials</title>
+</head>
+
+<body>
+  <header>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu">&#9776;</button>
+
+    <a href="../index.html"><img src="../Images/NavLogo.png" alt="Website Main Logo" class="logo"></a>
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#products">Our Products</a></li>
+        <li><a href="index.html">Testimonials</a></li>
+        <li><a href="../Contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sidebar" id="mobile-sidebar">
+      <ul>
+        <hr></hr>
+        <li><a href="../index.html">Home</a></li>
+        <hr></hr>
+        <li><a href="../index.html#products">Our Products</a></li>
+        <hr></hr>
+        <li><a href="index.html">Testimonials</a></li>
+        <hr></hr>
+        <li><a href="../Contact/index.html">Contact</a></li>
+        <hr></hr>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="testimonials-page">
+    <h1>Testimonials</h1>
+
+    <div class="testimonials-list">
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="message">“TruePop popcorn is the best snack I've had in ages! Super easy to make and tastes amazing.”</p>
+        <p class="author">— Sarah M.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐</div>
+        <p class="message">“Love the butter flavour, it's exactly like cinema popcorn but fresher.”</p>
+        <p class="author">— Daniel K.</p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="message">“Finally a healthy popcorn that doesn't taste boring! Extra butter is my favourite.”</p>
+        <p class="author">— Aisha P.</p>
+      </div>
+    </div>
+
+    <h2>Leave Your Testimonial</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="testimonial-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <select name="rating" id="rating" required>
+          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+          <option value="⭐⭐⭐">⭐⭐⭐</option>
+          <option value="⭐⭐">⭐⭐</option>
+          <option value="⭐">⭐</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Testimonial</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit Testimonial</button>
+    </form>
+  </main>
+
+  <footer>
+      <div class="footer-main">
+        <div class="footer-contact">
+          <div class="contact-item">
+            <img src="../Images/location-pin.png" alt="Location Icon">
+            <address>
+              Meddercrest Office Park<br>
+              1 High Street<br>
+              1610<br>
+              Modderfontain<br>
+              South Africa
+            </address>
+          </div>
+          <div class="contact-item">
+            <img src="../Images/email.png" alt="Email Icon">
+            <a href="mailto:info@truepop.co.za">info@truepop.co.za</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><img src="../Images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="../Images/facebook.png" alt="Facebook"></a>
+      </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 TruePop. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>
