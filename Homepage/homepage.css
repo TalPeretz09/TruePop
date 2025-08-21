@@ -51,10 +51,18 @@ padding-left: 1rem;
 }
 
 /* Products */
+#products{
+  margin-top: 1.2rem;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+#products p{
+  padding-left: 1.2rem;
 }
 
 .products .card {
